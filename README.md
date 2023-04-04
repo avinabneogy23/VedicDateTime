@@ -25,6 +25,10 @@ place <- c(22.80, 86.20, +5.5) #Latitude, Longitude and timezone of Jamshedpur,I
 tithi(jd, place)
 get_tithi_name(jd, place)
 ```
+```
+## [1] 12 42 24 45
+## [2] "Shukla paksha dvadashi till 42:24:45"
+```
 
 
 #### Medium Test
