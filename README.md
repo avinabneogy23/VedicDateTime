@@ -51,7 +51,7 @@ plot(days,rashi)
 -   Introducing new functions for date and time calculations some of which I have tried to implement in the dummy package for the Hard-test
 -   Introduce some datasets in the package which will cater to the Vedic Calender time series data. 
 -   Improve the accuracy of the package by comparing between different systems like the Surya Siddhanta and Drit Siddhanta.
--   Improving and making the documenttation and examples more comprehensive
+-   Improving and making the documentation and examples more comprehensive
 
 
 #### Hard Test
