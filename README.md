@@ -29,7 +29,15 @@ get_tithi_name(jd, place)
 ## [1] 12 42 24 45
 ## [2] "Shukla paksha dvadashi till 42:24:45"
 ```
-
+```r
+day1 <- gregorian_to_jd(1,1,2023)
+day2 <- gregorian_to_jd(1,1,2024)
+days <- seq(day1,day2)
+# Sunrise for 2023 in Jamshedpur
+sunrise <- sapply(X=days, FUN=sunrise, place = c(22.80, 86.20,+5.5))
+plot(days,sunrise[2,])
+```
+![alt text](https://github.com/avinabneogy23/GSOC-23vdt/blob/main/Easy%20test/graph_1.png)
 
 #### Medium Test
 `VedicDatetime` is a great package for providing a platform for Vedic calendar system having several functionalities to facilitate conversion between Gregorian and Vedic calendar systems, and is helpful in examining the impact in the time series analysis domain. . This project aims to upgrade and modify the package to make it more powerful,user-friendly and accurate. Few updates that I would suggest are:
