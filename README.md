@@ -12,6 +12,21 @@
 
 - Hard: Develop a dummy code of 5 functions and a vignette and pass it with no Error/Warning/Note through <https://win-builder.r-project.org/>
 
+#### Easy Test
+Install the `VedicDateTime` package using `install.packages("VedicDateTime")` and load it.
+
+``` r
+library(VedicDateTime)
+```
+```r
+#To get tithi for Jamshedpur on 2nd April,2023
+jd <- 2460036 #Julian day number for 2nd April,2023
+place <- c(22.80, 86.20, +5.5) #Latitude, Longitude and timezone of Jamshedpur,India
+tithi(jd, place)
+get_tithi_name(jd, place)
+```
+
+
 #### Medium Test
 `VedicDatetime` is a great package for providing a platform for Vedic calendar system having several functionalities to facilitate conversion between Gregorian and Vedic calendar systems, and is helpful in examining the impact in the time series analysis domain. . This project aims to upgrade and modify the package to make it more powerful,user-friendly and accurate. Few updates that I would suggest are:
 -   Introducing new functions for date and time calculations some of which I have tried to implement in the dummy package for the Hard-test
