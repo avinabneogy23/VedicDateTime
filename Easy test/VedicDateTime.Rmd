@@ -1,0 +1,47 @@
+---
+title: "VedicDateTime"
+author: "Avinab"
+date: "2023-04-03"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages("VedicDateTime",repos = "http://cran.us.r-project.org")
+library(VedicDateTime)
+```
+
+## Easy - Time series
+
+The following provides how to calculate the tithi for a given date and place using the functions in the VedicDateTime package
+```{r }
+library(VedicDateTime)
+#To get tithi for Jamshedpur on 2nd April,2023
+jd <- 2460036 #Julian day number for 2nd April,2023
+place <- c(22.80, 86.20, +5.5) #Latitude, Longitude and timezone of Jamshedpur,India
+tithi(jd, place)
+#To get tithi name for the place
+get_tithi_name(jd, place)
+```
+The following provides how to calculate the Nakshatra for a given date and place using the functions in the VedicDateTime package
+```{r}
+jd <- 2460036 #Julian day number
+place <- c(22.80, 86.20, +5.5) #Latitude, Longitude and timezone of the location
+nakshatra(jd, place)
+nakshatra(gregorian_to_jd(2, 4, 2023), c(22.80, 86.20, +5.5))
+#To get Nakshatra Name
+get_nakshatra_name(jd, place)
+get_nakshatra_name(gregorian_to_jd(2, 4, 2023), c(22.80, 86.20,+5.5))
+```
+The following are some variable time series plots for the first half of 2023 for Jamshedpur
+
+```{r}
+day1 <- gregorian_to_jd(1,1,2023)
+day2 <- gregorian_to_jd(1,1,2024)
+days <- seq(day1,day2)
+# Sunrise for 2023 in Jamshedpur
+sunrise <- sapply(X=days, FUN=sunrise, place = c(22.80, 86.20,+5.5))
+plot(days,sunrise[2,])
+# Rashi numbers for 2023
+rashi <- sapply(X=days, FUN=rashi)
+plot(days,rashi)
+```
