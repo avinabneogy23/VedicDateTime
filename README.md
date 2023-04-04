@@ -39,6 +39,13 @@ plot(days,sunrise[2,])
 ```
 ![alt text](https://github.com/avinabneogy23/GSOC-23vdt/blob/main/Easy%20test/graph_1.png)
 
+```r
+# Rashi numbers for 2023
+rashi <- sapply(X=days, FUN=rashi)
+plot(days,rashi)
+```
+![alt text](https://github.com/avinabneogy23/GSOC-23vdt/blob/main/Easy%20test/graph_2.png)
+
 #### Medium Test
 `VedicDatetime` is a great package for providing a platform for Vedic calendar system having several functionalities to facilitate conversion between Gregorian and Vedic calendar systems, and is helpful in examining the impact in the time series analysis domain. . This project aims to upgrade and modify the package to make it more powerful,user-friendly and accurate. Few updates that I would suggest are:
 -   Introducing new functions for date and time calculations some of which I have tried to implement in the dummy package for the Hard-test
