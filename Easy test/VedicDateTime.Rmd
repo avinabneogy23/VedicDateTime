@@ -32,7 +32,7 @@ nakshatra(gregorian_to_jd(2, 4, 2023), c(22.80, 86.20, +5.5))
 get_nakshatra_name(jd, place)
 get_nakshatra_name(gregorian_to_jd(2, 4, 2023), c(22.80, 86.20,+5.5))
 ```
-The following are some variable time series plots for the first half of 2023 for Jamshedpur
+The following are some variable time series plots for 2023 for Jamshedpur
 
 ```{r}
 day1 <- gregorian_to_jd(1,1,2023)
