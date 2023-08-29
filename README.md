@@ -1,4 +1,4 @@
-# Google Summer of Code 2023
+# VedicDateTime
 
 ## Organisation: The R Project for Statistical Computing 
 
