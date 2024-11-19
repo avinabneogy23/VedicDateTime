@@ -11,10 +11,10 @@ place <- c(22.80, 86.20, +5.5) #Latitude, Longitude and timezone of the location
 get_tithi_name(jd, place)
 #To get Vaara
 vaara(2460036)
-vaara(gregorian_to_jd(2, 4, 2023))
+vaara(gregorian_to_jd(2, 4, 2024))
 #To get Vaara name
 get_vaara_name(2459778)
-get_vaara_name(gregorian_to_jd(2, 4, 2023))
+get_vaara_name(gregorian_to_jd(2, 4, 2024))
 #To get Nakshatra
 jd <- 2460036 #Julian day number
 place <- c(22.80, 86.20, +5.5) #Latitude, Longitude and timezone of the location
